@@ -1,0 +1,40 @@
+.section2 {
+  display: grid;
+  grid-template-areas: "sec2q sec2img" "sec2cap sec2img" "sec2loc sec2img";
+  background: #6d0430;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+  height: 683px;
+}
+blockquote {
+  grid-area: sec2q;
+  font-weight: 600;
+  font-size: 39px;
+  line-height: 50.4px;
+  letter-spacing: -1px;
+  color: white;
+  padding: 173px 30px 0 80px;
+}
+.section2-img {
+  grid-area: sec2img;
+  width: 649px;
+  height: 683px;
+}
+.section2-figcaption-name {
+  grid-area: sec2cap;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.3px;
+  color: white;
+  padding: 30px 0px 0 80px;
+}
+.section2-figcaption-location {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: white;
+  opacity: 0.8;
+  grid-area: sec2loc;
+  padding: 0px 0px 0 80px;
+}

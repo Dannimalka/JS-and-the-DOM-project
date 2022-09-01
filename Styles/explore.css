@@ -1,0 +1,66 @@
+.explore {
+  display: grid;
+  grid-template-areas:
+    "exploreh2 exploreh2 arrows"
+    "exploreimg1 exploreimg2 exploreimg3";
+  padding-bottom: 95px;
+}
+.exploreh2 {
+  padding: 80px 0 40px 0;
+  grid-area: exploreh2;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 50.4px;
+  letter-spacing: -1px;
+}
+.exploreimg1 {
+  grid-area: exploreimg1;
+  width: 390px;
+}
+.exploreimg2 {
+  grid-area: exploreimg2;
+  width: 390px;
+  padding: 0 31px 0 31px;
+}
+.exploreimg3 {
+  grid-area: exploreimg3;
+  /*position: relative;*/
+}
+.arrows {
+  grid-area: arrows;
+  padding: 80px 0 40px 0;
+}
+.explore-img-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0;
+  position: relative;
+}
+.explore-corner-box {
+  position: absolute;
+  width: 312.15px;
+  height: 106.84px;
+  border-radius: 10px;
+  margin: auto;
+  background: white;
+  bottom: 15px;
+  right: 65px;
+}
+.explore-corner-box h3 {
+  font-weight: 600;
+  color: #eb5296;
+  font-size: 32px;
+  line-height: 42px;
+  padding: 21.77px 125.01px 0 27.14px;
+  letter-spacing: -1px;
+}
+.explore-corner-box p {
+  font-weight: 600;
+  color: #102a42;
+  font-size: 13px;
+  line-height: 22px;
+  padding: 0 81px 16.72px 27px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}

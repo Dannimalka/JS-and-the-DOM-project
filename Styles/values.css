@@ -1,0 +1,40 @@
+.our-values {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 50px;
+  gap: 40px;
+}
+.smallcard1,
+.smallcard2,
+.smallcard3 {
+  display: flex;
+}
+.vector-img {
+  margin: auto;
+  padding: 25px;
+}
+.cardp {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  opacity: 80%;
+}
+.cardh2 {
+  padding-bottom: 15px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.3px;
+}
+.vectordiv {
+  background: rgba(109, 4, 48, 0.2);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: auto;
+  justify-items: center;
+}
+.cardcontainer {
+  padding: 20px 40px 0 20px;
+}
