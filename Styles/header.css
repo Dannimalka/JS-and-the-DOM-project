@@ -1,0 +1,31 @@
+header {
+  z-index: 2;
+  position: sticky;
+  background: rgba(255, 255, 255, 0.7);
+  top: 0;
+  height: 112px;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  color: #102a42;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+  font-weight: 600;
+}
+.logo {
+  font-weight: 900;
+  font-size: 24px;
+}
+span {
+  color: red;
+}
+a {
+  transition-timing-function: ease-out;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #eb5296;
+}
