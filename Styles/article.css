@@ -131,3 +131,48 @@ article {
   }
   /*well if it works it works*/
 }
+@media only screen and (max-width: 600px) {
+  .article-h2 {
+    width: 182px;
+    color: #eb5296;
+    font-weight: 600px;
+    font-size: 33px;
+    line-height: 38px;
+    letter-spacing: -1px;
+    padding: 0;
+  }
+  .article-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-text {
+    padding: 0;
+    margin: auto;
+    border-bottom: none;
+  }
+  .article-more {
+    padding-bottom: 30px;
+    padding-top: 50px;
+  }
+  .article-number {
+    grid-area: art-number1;
+    padding-top: 30px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .page-section-2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .article-title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 46px;
+    letter-spacing: -1px;
+    color: #102a42;
+    border-bottom: none;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-right: 60px;
+  }
+}

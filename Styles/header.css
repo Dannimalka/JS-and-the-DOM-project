@@ -31,11 +31,63 @@ a:hover {
   text-decoration: underline;
   text-decoration-color: #eb5296;
 }
-/* header bar hider */
 
-.scroll-down header {
-  transform: translate3d(0, -100%, 0);
+.burger div {
+  width: 25px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #102a42;
+  margin: 5px;
 }
-.scroll-up header {
-  box-shadow: 0 1px 5px -2px gray;
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    z-index: 100;
+    position: sticky;
+    background: rgba(255, 255, 255, 1);
+    top: 0;
+    width: 100%;
+    height: 112px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    color: #102a42;
+    transition: all 0.5s ease-out;
+  }
+  .navbar-ul {
+    position: absolute;
+    right: 0px;
+    height: 80vh;
+    width: 70vw;
+    top: 8vh;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  ul li {
+    margin-left: 10vw;
+    width: 100%;
+    box-shadow: 0 2px 2px -2px gray;
+    padding-bottom: 5vh;
+    font-size: 21px;
+  }
+  .burger {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 39px;
+    cursor: pointer;
+  }
+}
+.burger-active {
+  transform: translateX(0%);
 }

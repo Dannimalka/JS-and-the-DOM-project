@@ -79,4 +79,73 @@ main {
 }
 
 @media only screen and (max-width: 600px) {
+  main {
+    height: auto;
+    width: auto;
+    border-radius: 30px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "img"
+      "h2"
+      "h1"
+      "middle"
+      "bottom";
+    background: rgba(109, 4, 48, 0.05);
+    margin-right: 5vw;
+    margin-left: 5vw;
+    padding-right: 0;
+  }
+  .heroimg {
+    grid-area: img;
+    border-radius: 30px 30px 0 0px;
+    width: 100%;
+    height: 408px;
+    object-fit: fill;
+    padding-right: 0;
+  }
+  .hero-h1 {
+    grid-area: h1;
+    text-align: left;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: -1px;
+    color: #102a42;
+    line-height: 37px;
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+  .hero-h2 {
+    padding-top: 50px;
+    grid-area: h2;
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 8px;
+    color: #eb5296;
+    line-height: 22px;
+  }
+  .hero-middle {
+    width: auto;
+    grid-area: middle;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    color: rgba(29, 38, 58, 0.7);
+    padding: 15px 10px 20px 10px;
+    text-align: left;
+  }
+  .hero-bottom {
+    text-align: center;
+    grid-area: bottom;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 4px;
+    color: #1d263a;
+    padding-bottom: 50px;
+  }
 }
