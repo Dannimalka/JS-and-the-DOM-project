@@ -26,3 +26,15 @@ footer .logo {
 footer p {
   padding-bottom: 40px;
 }
+
+@media only screen and (max-width: 1024px) {
+  footer p {
+    padding-bottom: 20px;
+  }
+  .footer1 {
+    padding: 60px 20px 0 60px;
+  }
+  footer h4 {
+    padding: 60px 0 50px 0;
+  }
+}

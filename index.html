@@ -17,13 +17,7 @@
     <header>
       <h2 class="logo">PinkPink<span>.</span></h2>
       <nav>
-        <ul>
-          <li><a href="">Showcase</a></li>
-          <li><a href="">How we do it</a></li>
-          <li><a href="">Our Projects</a></li>
-          <li><a href="">Testimonials</a></li>
-          <li><a href="">Subscribe</a></li>
-        </ul>
+        <ul class="navbar-ul" id="navbar"></ul>
       </nav>
     </header>
     <main>
@@ -91,7 +85,7 @@
         </div>
       </div>
     </div>
-    <div class="explore">
+    <section class="explore page-section-1" data-nav="Showcase">
       <h2 class="exploreh2">
         Explore our exclusive design Showcase<span>.</span>
       </h2>
@@ -118,43 +112,47 @@
           <p>Phoenix, Arizona</p>
         </div>
       </div>
-    </div>
-    <article>
+    </section>
+    <section class="page-section-2" data-nav="How we do it">
       <h2 class="article-h2">
         This is how we do it<span class="black-dot">.</span>
       </h2>
       <div class="article-container">
-        <p class="article-number">01.</p>
-        <h3 class="article-title">discuss the concept with us<span>.</span></h3>
-        <p class="article-text">
+        <p class="article-number article-number1">01.</p>
+        <h3 class="article-title article-title1">
+          discuss the concept with us<span>.</span>
+        </h3>
+        <p class="article-text article-text1">
           Do you need a talented design eye to cast vision and look for
           one-of-a-kind opportunities in your home? This is a robust
           consultation-conversation package.
         </p>
-        <p class="article-more">Learn More</p>
+        <p class="article-more article-more1">Learn More</p>
 
-        <p class="article-number">02.</p>
-        <h3 class="article-title">confirm the provided design<span>.</span></h3>
-        <p class="article-text">
+        <p class="article-number article-number2">02.</p>
+        <h3 class="article-title article-title2">
+          confirm the provided design<span>.</span>
+        </h3>
+        <p class="article-text article-text2">
           We will send you a proposal and service agreement for your review.
           Then we will get down to the exciting stuff and communicate concepts
           visually.
         </p>
-        <p class="article-more">Learn More</p>
+        <p class="article-more article-more2">Learn More</p>
 
-        <p class="article-number">03.</p>
-        <h3 class="article-title">
+        <p class="article-number article-number3">03.</p>
+        <h3 class="article-title article-title3">
           We fully design and accessorize your home<span>.</span>
         </h3>
-        <p class="article-text">
+        <p class="article-text article-text3">
           Specializing in whole-home transformations, we design with intention
           to deliver interiors with a depth of character and emotion, and a
           breadth of function and practicality.
         </p>
-        <p class="article-more">Learn More</p>
+        <p class="article-more article-more3">Learn More</p>
       </div>
-    </article>
-    <section class="section1">
+    </section>
+    <section class="section1 page-section-3" data-nav="Our Projects">
       <img src="images\jimmy-dean-Qngdf0kgGB4-unsplash 1.png" alt="" />
       <h2>Spend your happy time with full comfort<span>.</span></h2>
       <p class="section-paragraph">
@@ -164,7 +162,7 @@
       </p>
       <p class="section-last-paragraph">EXPLORE OUR PROJECTS</p>
     </section>
-    <section class="section2">
+    <section class="section2 page-section-4" data-nav="Testimonials">
       <figure>
         <blockquote>
           “I absolutely love my new home and cannot thank you enough for all of
@@ -181,7 +179,91 @@
         class="section2-img"
       />
     </section>
-    <div class="subscribe"></div>
+    <section class="subscribe page-section-5" data-nav="Subscribe">
+      <div class="sub-text-container">
+        <h2>
+          Subscribe to our newsletter to get updated<span class="black-dot"
+            >.</span
+          >
+        </h2>
+        <p class="sub-text-container-p">
+          Get our latest update on your inbox. With lots of unique blocks, you
+          can easily build a page without coding. Build your next consultancy
+          website within few minutes.
+        </p>
+      </div>
+      <div class="sub-form">
+        <form action="" name="subform1" method="post">
+          <div class="sub-name">
+            <h4>Your first name</h4>
+            <input
+              type="first-name"
+              class="sub-box name"
+              name="name"
+              placeholder="Write your first name here"
+            />
+          </div>
+          <div class="sub-surname">
+            <h4>Your Surname</h4>
+            <input
+              type="surname"
+              class="sub-box surname"
+              name="surname"
+              placeholder="Write your surname here"
+            />
+          </div>
+          <div class="sub-email">
+            <h4>Email Address</h4>
+            <input
+              type="email"
+              class="sub-box email"
+              name="email"
+              placeholder="Write your email address here"
+            />
+          </div>
+          <div class="sub-phone">
+            <h4>Phone number</h4>
+            <input
+              type="phone-number"
+              class="sub-box phone"
+              name="phone"
+              placeholder="Write your phone number here"
+            />
+          </div>
+        </form>
+        <form action="" class="form2" name="subform" method="post">
+          <div class="sub-subject">
+            <h4>Subject</h4>
+            <input
+              type="subject"
+              class="sub-box subject"
+              name="subject"
+              placeholder="Write a subject line"
+            />
+          </div>
+          <h4>Message</h4>
+          <textarea rows="4" cols="60" name="messsage">
+Add a brief of your project</textarea
+          >
+          <div class="sub-button-container">
+            <input
+              type="submit"
+              name="submit"
+              class="submit-button"
+              value="Submit"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="disclaimer-container">
+        <img
+          src="images\vectors\icons8-lock-32.png"
+          alt="Lock"
+          class="disclaimer-container-img"
+        />
+        <p class="spam">We do spam quite a bit!</p>
+      </div>
+    </section>
     <footer>
       <div class="footer1">
         <div class="logo">PinkPink<span>.</span></div>
@@ -203,9 +285,13 @@
       <div class="footer4">
         <h4>OUR COMPANY</h4>
         <p>About us</p>
-        <p>Services</p>
+        <p>
+          <a target="_blank" href="https://icons8.com/icon/14095/lock">Lock</a>
+          icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        </p>
         <p>Products</p>
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>

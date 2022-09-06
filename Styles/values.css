@@ -36,5 +36,28 @@
   justify-items: center;
 }
 .cardcontainer {
-  padding: 20px 40px 0 20px;
+  padding: 20px 0 0 20px;
+}
+@media only screen and (max-width: 1024px) {
+  .our-values {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 50px;
+    gap: 20px;
+  }
+  .smallcard1,
+  .smallcard2,
+  .smallcard3 {
+    display: grid;
+    grid-template-rows: 1fr;
+    text-align: center;
+  }
+  .cardp {
+    width: 180px;
+    align-items: center;
+    padding-left: 35px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
 }

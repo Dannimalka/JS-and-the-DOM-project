@@ -63,3 +63,20 @@ main {
   color: #1d263a;
   padding-bottom: 100px;
 }
+@media only screen and (max-width: 1024px) {
+  .heroimg {
+    width: 481px;
+    height: 796px;
+    object-fit: cover;
+  }
+  main {
+    height: auto;
+  }
+  .hero-h1 {
+    font-size: 40px;
+    line-height: 49px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}

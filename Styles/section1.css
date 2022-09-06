@@ -1,5 +1,5 @@
 .section1 {
-  height: auto;
+  height: 100%;
   width: auto;
   display: grid;
   grid-template-areas:
@@ -43,4 +43,26 @@
   letter-spacing: 4px;
   font-weight: 600;
   color: #eb5296;
+}
+@media only screen and (max-width: 1024px) {
+  .section1 img {
+    height: 500px;
+    width: 423px;
+    object-fit: cover;
+  }
+  .section1 {
+    padding: 60px 0px 60px 0px;
+    column-gap: 40px;
+  }
+  .section1 h2 {
+    padding-right: 50px;
+  }
+  .section-paragraph {
+    padding-right: auto;
+    width: auto;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
 }

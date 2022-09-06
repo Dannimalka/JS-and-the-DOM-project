@@ -1,13 +1,15 @@
 header {
-  z-index: 2;
+  z-index: 100;
   position: sticky;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 1);
   top: 0;
+  width: 100%;
   height: 112px;
   display: grid;
   grid-template-columns: 1fr 5fr;
   align-items: center;
   color: #102a42;
+  transition: all 0.5s ease-out;
 }
 ul {
   display: flex;
@@ -28,4 +30,12 @@ a {
 a:hover {
   text-decoration: underline;
   text-decoration-color: #eb5296;
+}
+/* header bar hider */
+
+.scroll-down header {
+  transform: translate3d(0, -100%, 0);
+}
+.scroll-up header {
+  box-shadow: 0 1px 5px -2px gray;
 }

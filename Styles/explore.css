@@ -64,3 +64,23 @@
   letter-spacing: 4px;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 1024px) {
+  .exploreimg1,
+  .exploreimg2,
+  .exploreimg3 {
+    width: 290px;
+    height: 499px;
+  }
+  .exploreimg2 {
+    padding: 0 22px 0 22px;
+  }
+  .explore-corner-box {
+    width: 262px;
+    height: 107px;
+    bottom: 15px;
+    right: 15px;
+  }
+  .explore-corner-box p {
+    padding: 0 0px 16.72px 27px;
+  }
+}

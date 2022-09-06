@@ -60,3 +60,74 @@ article {
   padding-bottom: 97px;
   padding-top: 97px;
 }
+
+@media only screen and (max-width: 1024px) {
+  .article-h2 {
+    padding: 30px 0 0 180px;
+    color: #eb5296;
+    font-weight: 600px;
+    font-size: 42px;
+    line-height: 50.4px;
+    letter-spacing: -1px;
+  }
+  .article-container {
+    display: grid;
+    grid-template-areas:
+      "art-number1 art-text1"
+      "art-number2 art-text2"
+      "art-number3 art-text3";
+    grid-template-columns: 1fr 1fr;
+  }
+  .article-text {
+    padding: 0;
+    margin: auto;
+    border-bottom: none;
+  }
+  .article-more {
+    padding-bottom: 0;
+    padding-top: 200px;
+  }
+  .article-number {
+    grid-area: art-number1;
+    padding-top: 30px;
+    border-bottom: none;
+  }
+
+  .article-number1 {
+    grid-area: art-number1;
+  }
+  .article-title1 {
+    grid-area: art-number1;
+  }
+  .article-text1 {
+    grid-area: art-text1;
+  }
+  .article-more1 {
+    grid-area: art-text1;
+  }
+  .article-number2 {
+    grid-area: art-number2;
+  }
+  .article-title2 {
+    grid-area: art-number2;
+  }
+  .article-text2 {
+    grid-area: art-text2;
+  }
+  .article-more2 {
+    grid-area: art-text2;
+  }
+  .article-number3 {
+    grid-area: art-number3;
+  }
+  .article-title3 {
+    grid-area: art-number3;
+  }
+  .article-text3 {
+    grid-area: art-text3;
+  }
+  .article-more3 {
+    grid-area: art-text3;
+  }
+  /*well if it works it works*/
+}
