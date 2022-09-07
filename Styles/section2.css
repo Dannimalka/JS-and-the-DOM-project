@@ -52,3 +52,38 @@ blockquote {
     padding: 102px 30px 0 40px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .section2 {
+    display: grid;
+    grid-template-areas:
+      "sec2q"
+      "sec2cap"
+      "sec2loc"
+      "sec2img";
+    background: #6d0430;
+    grid-template-columns: 1fr;
+    column-gap: 60px;
+    height: auto;
+    width: auto;
+  }
+  .section2-img {
+    width: 100vw;
+    height: auto;
+    object-fit: contain;
+  }
+  blockquote {
+    font-size: 30px;
+    line-height: 34px;
+    width: 80vw;
+    padding: 40px 15px 0 35px;
+  }
+  .section2-figcaption-name {
+    font-size: 20px;
+    line-height: 32px;
+
+    padding: 20px 0px 0 35px;
+  }
+  .section2-figcaption-location {
+    padding: 0px 0px 35px 35px;
+  }
+}

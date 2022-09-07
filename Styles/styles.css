@@ -21,8 +21,9 @@ body {
   margin: auto;
 }
 .active {
-  background: linear-gradient(#8ec5fc, #e0c3fc);
+  background: #eb5296;
   transition: 0.3s;
+  color: white;
 }
 @media only screen and (max-width: 1024px) {
   body {

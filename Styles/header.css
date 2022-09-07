@@ -32,15 +32,41 @@ a:hover {
   text-decoration-color: #eb5296;
 }
 
-.burger div {
+.lines {
   width: 25px;
   height: 3px;
   border-radius: 2px;
   background-color: #102a42;
   margin: 5px;
 }
+
+.x {
+  display: none;
+}
 .burger {
   display: none;
+}
+ul li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 205px;
+  padding: 40px 0 40px 0;
+  margin: auto;
+}
+ul li:hover {
+  background: #eb52975d;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  ul li {
+    width: 175px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  ul li {
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -75,7 +101,8 @@ a:hover {
   }
   ul li {
     margin-left: 10vw;
-    width: 100%;
+    width: 200px;
+    height: auto;
     box-shadow: 0 2px 2px -2px gray;
     padding-bottom: 5vh;
     font-size: 21px;
@@ -90,4 +117,22 @@ a:hover {
 }
 .burger-active {
   transform: translateX(0%);
+}
+.x-active {
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  font-size: 40px;
+  cursor: pointer;
+}
+.line1-active,
+.line2-active,
+.line3-active {
+  display: none;
+  width: 1px;
+  height: 1px;
+  border-radius: 2px;
+  background-color: #102a42;
+  margin: 0;
 }

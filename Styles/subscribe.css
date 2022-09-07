@@ -114,3 +114,31 @@ textarea {
   width: 20px;
   height: 20px;
 }
+@media screen and (max-width: 600px) {
+  .sub-text-container {
+    width: auto;
+    display: block;
+    margin: auto;
+    padding: 0 30px 30px 30px;
+    text-align: center;
+  }
+  .sub-text-container-p {
+    width: auto;
+  }
+  .sub-form {
+    width: 85%;
+    height: auto;
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    align-content: space-around;
+  }
+  .subscribe {
+    height: auto;
+  }
+}

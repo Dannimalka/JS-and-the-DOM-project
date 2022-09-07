@@ -65,4 +65,24 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .section1 {
+    height: 100%;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "secimg"
+      "sech2"
+      "secp"
+      "secp2";
+    padding: 60px 10px 40px 10px;
+    column-gap: 80px;
+  }
+  .section1 img {
+    grid-area: secimg;
+    height: auto;
+    width: 95%;
+    object-fit: contain;
+    border-radius: 15px;
+  }
 }

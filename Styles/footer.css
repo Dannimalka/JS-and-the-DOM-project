@@ -38,3 +38,35 @@ footer p {
     padding: 60px 0 50px 0;
   }
 }
+@media only screen and (max-width: 600px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+    border-radius: 60px;
+    column-gap: 35px;
+    border: 30px solid white;
+  }
+  footer h4 {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 4px;
+    color: #eb5296;
+    text-transform: uppercase;
+    padding: 60px 0 0 0;
+    text-align: center;
+  }
+
+  .footer1 {
+    padding: 118px 50px 0 50px;
+  }
+  footer .logo {
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  footer p {
+    padding-bottom: 40px;
+    text-align: center;
+  }
+}
