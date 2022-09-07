@@ -25,6 +25,12 @@ body {
   transition: 0.3s;
   color: white;
 }
+.active:hover {
+  background: white;
+  transition: 0.3s;
+  color: #eb5296;
+  border: 3px solid #eb5296;
+}
 @media only screen and (max-width: 1024px) {
   body {
     width: 95%;
