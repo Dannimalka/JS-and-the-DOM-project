@@ -1,5 +1,6 @@
 .explore {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
     "exploreh2 exploreh2 arrows"
     "exploreimg1 exploreimg2 exploreimg3";
@@ -15,15 +16,16 @@
 }
 .exploreimg1 {
   grid-area: exploreimg1;
-  width: 390px;
+  width: auto;
 }
 .exploreimg2 {
   grid-area: exploreimg2;
-  width: 390px;
+  width: auto;
   padding: 0 31px 0 31px;
 }
 .exploreimg3 {
   grid-area: exploreimg3;
+  width: auto;
   /*position: relative;*/
 }
 .arrows {
@@ -64,12 +66,20 @@
   letter-spacing: 4px;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1300px) {
+  .explore {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "exploreh2 exploreh2 arrows"
+      "exploreimg1 exploreimg2 exploreimg3";
+    padding-bottom: 95px;
+  }
   .exploreimg1,
   .exploreimg2,
   .exploreimg3 {
-    width: 290px;
-    height: 499px;
+    width: 30vw;
+    height: auto;
   }
   .exploreimg2 {
     padding: 0 22px 0 22px;
@@ -84,7 +94,27 @@
     padding: 0 0px 16.72px 27px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
+  .exploreimg1,
+  .exploreimg2,
+  .exploreimg3 {
+    width: 30vw;
+    height: auto;
+  }
+  .exploreimg2 {
+    padding: 0 22px 0 22px;
+  }
+  .explore-corner-box {
+    width: 262px;
+    height: 107px;
+    bottom: 15px;
+    right: 15px;
+  }
+  .explore-corner-box p {
+    padding: 0 0px 16.72px 27px;
+  }
+}
+@media only screen and (max-width: 750px) {
   .explore {
     display: grid;
     grid-template-columns: 1fr;
@@ -92,7 +122,7 @@
       "exploreh2"
       "exploreimg3"
       "arrows";
-    padding-bottom: 95px;
+    padding-bottom: 0px;
     padding: 0;
   }
   .exploreimg1 {

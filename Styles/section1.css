@@ -44,6 +44,30 @@
   font-weight: 600;
   color: #eb5296;
 }
+
+@media only screen and (max-width: 1250px) {
+  .section1 img {
+    width: 40vw;
+    height: 100%;
+    object-fit: contain;
+  }
+  .section1 {
+    height: 100%;
+    width: auto;
+    display: grid;
+    grid-template-areas:
+      "secimg sech2"
+      "secimg secp"
+      "secimg secp2";
+    padding: 60px 0px 120px 0px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+  }
+  .section1 h2 {
+    padding-top: 60px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .section1 img {
     height: 500px;
@@ -63,8 +87,20 @@
     height: auto;
   }
 }
+@media only screen and (max-width: 850px) {
+  .section1 img {
+    grid-area: secimg;
+    height: 500px;
+    width: 50vw;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .section1 {
+    column-gap: 20px;
+  }
+}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .section1 {
     height: 100%;
     width: auto;

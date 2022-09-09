@@ -62,14 +62,25 @@ ul li:hover {
   ul li {
     width: 175px;
   }
+  header {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1100px) {
   ul li {
     width: auto;
   }
+  header {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 950px) {
+  header {
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   body {
     overflow-x: hidden;
   }

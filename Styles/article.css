@@ -131,15 +131,15 @@ article {
   }
   /*well if it works it works*/
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .article-h2 {
-    width: 182px;
+    width: 200px;
     color: #eb5296;
     font-weight: 600px;
     font-size: 33px;
     line-height: 38px;
     letter-spacing: -1px;
-    padding: 0;
+    padding: 40px 0 0 0px;
   }
   .article-container {
     display: flex;

@@ -31,7 +31,7 @@ body {
   color: #eb5296;
   border: 3px solid #eb5296;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1350px) {
   body {
     width: 95%;
   }
