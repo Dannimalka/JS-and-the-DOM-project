@@ -2,10 +2,11 @@
 // part 1
 let ul = document.getElementById("navbar");
 const navSections = document.querySelectorAll("[data-nav]");
+const sectionsOnScreen = document.querySelectorAll("#section");
 
+//console.log(sectionsOnScreen);
 navSections.forEach((individualSection) => {
   linkText = individualSection.getAttribute("data-nav");
-  console.log(linkText);
 
   let li = document.createElement("li");
   li.setAttribute("id", linkText);
@@ -20,7 +21,7 @@ navSections.forEach((individualSection) => {
   ul.appendChild(li);
 });
 
-// part 2 - Navbar highlighter
+// part 2 - Navbar & section highlighter
 
 window.addEventListener("scroll", navHighlighter);
 
@@ -29,13 +30,16 @@ function navHighlighter() {
 
   navSections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
+
     const sectionTop =
       current.getBoundingClientRect().top + window.pageYOffset - 50;
     sectionId = current.getAttribute("data-nav");
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       document.getElementById(sectionId).classList.add("active");
+      current.classList.add("section-active");
     } else {
       document.getElementById(sectionId).classList.remove("active");
+      current.classList.remove("section-active");
     }
   });
 }
@@ -60,3 +64,14 @@ const navBurger = () => {
   });
 };
 navBurger();
+
+// Part 4
+//Subscribe button
+
+const form = document.getElementById("form");
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  form.classList.add("submitted-active");
+  form.textContent = "Thank you for that!";
+});

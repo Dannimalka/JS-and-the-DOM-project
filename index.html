@@ -91,7 +91,7 @@
         </div>
       </div>
     </div>
-    <section class="explore page-section-1" data-nav="Showcase">
+    <section class="explore page-section-1" data-nav="Showcase" id="section">
       <h2 class="exploreh2">
         Explore our exclusive design Showcase<span>.</span>
       </h2>
@@ -119,7 +119,7 @@
         </div>
       </div>
     </section>
-    <section class="page-section-2" data-nav="How we do it">
+    <section class="page-section-2" data-nav="How-we-do-it" id="section">
       <h2 class="article-h2">
         This is how we do it<span class="black-dot">.</span>
       </h2>
@@ -158,7 +158,11 @@
         <p class="article-more article-more3">Learn More</p>
       </div>
     </section>
-    <section class="section1 page-section-3" data-nav="Our Projects">
+    <section
+      class="section1 page-section-3"
+      data-nav="Our-Projects"
+      id="section"
+    >
       <img src="images\jimmy-dean-Qngdf0kgGB4-unsplash 1.png" alt="" />
       <h2>Spend your happy time with full comfort<span>.</span></h2>
       <p class="section-paragraph">
@@ -168,7 +172,11 @@
       </p>
       <p class="section-last-paragraph">EXPLORE OUR PROJECTS</p>
     </section>
-    <section class="section2 page-section-4" data-nav="Testimonials">
+    <section
+      class="section2 page-section-4"
+      data-nav="Testimonials"
+      id="section"
+    >
       <figure>
         <blockquote>
           “I absolutely hate my new home and cannot thank you enough for all of
@@ -185,7 +193,7 @@
         class="section2-img"
       />
     </section>
-    <section class="subscribe page-section-5" data-nav="Subscribe">
+    <section class="subscribe page-section-5" data-nav="Subscribe" id="section">
       <div class="sub-text-container">
         <h2>
           Subscribe to our newsletter to get updated<span class="black-dot"
@@ -203,19 +211,21 @@
           <div class="sub-name">
             <h4>Your first name</h4>
             <input
-              type="first-name"
+              type="text"
               class="sub-box name"
               name="name"
               placeholder="Write your first name here"
+              required
             />
           </div>
           <div class="sub-surname">
             <h4>Your Surname</h4>
             <input
-              type="surname"
+              type="text"
               class="sub-box surname"
               name="surname"
               placeholder="Write your surname here"
+              required
             />
           </div>
           <div class="sub-email">
@@ -225,26 +235,29 @@
               class="sub-box email"
               name="email"
               placeholder="Write your email address here"
+              required
             />
           </div>
           <div class="sub-phone">
             <h4>Phone number</h4>
             <input
-              type="phone-number"
+              type="tel"
               class="sub-box phone"
               name="phone"
               placeholder="Write your phone number here"
+              required
             />
           </div>
         </form>
-        <form action="" class="form2" name="subform" method="post">
+        <form action="" class="form2" name="subform" method="post" id="form">
           <div class="sub-subject">
             <h4>Subject</h4>
             <input
-              type="subject"
+              type="text"
               class="sub-box subject"
               name="subject"
               placeholder="Write a subject line"
+              required
             />
           </div>
           <h4>Message</h4>

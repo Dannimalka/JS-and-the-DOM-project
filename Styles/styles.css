@@ -26,7 +26,7 @@ body {
   color: white;
 }
 .active:hover {
-  background: white;
+  background: rgba(255, 255, 255, 0.493);
   transition: 0.3s;
   color: #eb5296;
   border: 3px solid #eb5296;
@@ -41,4 +41,25 @@ body {
   body {
     width: 100%;
   }
+}
+.showcase-active {
+  background-color: blue;
+  color: blueviolet;
+}
+.how-we-do-it-active {
+  background-color: black;
+}
+#section-active {
+  background-color: black;
+}
+
+.active-section {
+  background-color: blue;
+}
+
+.section-active {
+  transform: scale(1.03);
+  box-shadow: 1px 0 60px 0 rgba(0, 0, 0, 0.3);
+  transition: 1s;
+  z-index: 1000;
 }
